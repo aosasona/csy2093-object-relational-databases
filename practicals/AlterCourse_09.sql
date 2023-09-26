@@ -1,5 +1,5 @@
 /* AlterCourse */
--- RunCommand @/Users/macintosh/school/ord/practicals/AlterCourse.sql
+-- RunCommand @/Users/macintosh/school/ord/practicals/AlterCourse_09.sql
 -- PKs
 ALTER TABLE subject_areas
 ADD CONSTRAINT pk_subject_areas

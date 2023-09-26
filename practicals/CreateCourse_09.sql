@@ -1,5 +1,5 @@
 /* CreateCourse */
--- RunCommand @/Users/macintosh/school/ord/practicals/CreateCourse.sql
+-- RunCommand @/Users/macintosh/school/ord/practicals/CreateCourse_09.sql
 CREATE OR REPLACE TYPE address_type AS OBJECT (
 street           VARCHAR2(25),
 city             VARCHAR2(25),

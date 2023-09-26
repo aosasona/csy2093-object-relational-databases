@@ -1,5 +1,5 @@
 /* InsertCourse */
--- RunCommand @/Users/macintosh/school/ord/practicals/InsertCourse.sql
+-- RunCommand @/Users/macintosh/school/ord/practicals/InsertCourse_09.sql
 INSERT INTO addresses (street, city, country)
 VALUES ('111 BAY STATE ROAD', 'BOSTON', 'USA');
 INSERT INTO addresses (street, city, country)

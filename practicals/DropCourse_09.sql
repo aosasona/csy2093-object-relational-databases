@@ -1,10 +1,10 @@
 /* DropCourse */
 /*
 
-@/Users/macintosh/school/ord/practicals/DropCourse.sql
-@/Users/macintosh/school/ord/practicals/CreateCourse.sql
-@/Users/macintosh/school/ord/practicals/AlterCourse.sql
-@/Users/macintosh/school/ord/practicals/InsertCourse.sql
+@/Users/macintosh/school/ord/practicals/DropCourse_09.sql
+@/Users/macintosh/school/ord/practicals/CreateCourse_09.sql
+@/Users/macintosh/school/ord/practicals/AlterCourse_09.sql
+@/Users/macintosh/school/ord/practicals/InsertCourse_09.sql
 
 */
 DROP TABLE invoices;
