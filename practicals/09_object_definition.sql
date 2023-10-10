@@ -39,11 +39,10 @@ from user_objects
 ;
 
 -- DROP TABLE states;
-DROP TABLE bill_addresses;
-DROP TABLE customers;
+-- DROP TABLE bill_addresses;
+-- DROP TABLE customers;
 -- DROP TYPE state_type;
-DROP TYPE invoice_address_type;
-
+-- DROP TYPE invoice_address_type;
 CREATE OR REPLACE TYPE social_media_type AS OBJECT (
   media_name VARCHAR2(25),
   contact VARCHAR2(50)
@@ -70,8 +69,8 @@ CREATE TABLE adverts (
   social_media_used social_media_table_type)
 NESTED TABLE social_media_used STORE AS social_media_table;
 
-DROP TABLE adverts;
-DROP TABLE prospective_customers;
-DROP TYPE social_media_table_type;
-DROP TYPE social_media_varray_type;
-DROP TYPE social_media_type;
+-- DROP TABLE adverts;
+-- DROP TABLE prospective_customers;
+-- DROP TYPE social_media_table_type;
+-- DROP TYPE social_media_varray_type;
+-- DROP TYPE social_media_type;
