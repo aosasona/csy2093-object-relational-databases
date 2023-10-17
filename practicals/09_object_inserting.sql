@@ -8,7 +8,7 @@ INSERT INTO customers (customer_id, customer_name, invoice_address)
 INSERT INTO states (state, country) VALUES ('BIHAR', 'INDIA');
 
 UPDATE sites s
-SET s.state = (SELECT REF(st) FROM states st WHERE st.state = 'BIHAR')
+SET s.state_ref = (SELECT REF(st) FROM states st WHERE st.state = 'BIHAR')
 WHERE s.site_id = 1;
 
 INSERT INTO customers (customer_id, customer_name, invoice_address)
@@ -19,7 +19,7 @@ INSERT INTO states (state, country) VALUES ('VICTORIA', 'AUSTRALIA');
 INSERT INTO states (state, country) VALUES ('QUEENSLAND', 'AUSTRALIA');
 INSERT INTO states (state, country) VALUES ('DELHI', 'INDIA');
 
-INSERT INTO sites (site_id, address, state)
+INSERT INTO sites (site_id, address, state_ref)
   SELECT 10, address_type('20 BOURNE STREET', 'VICTORIA', 'AUSTRALIA'), REF(st)
 FROM states st 
 WHERE st.state = 'QUEENSLAND';
@@ -45,7 +45,7 @@ VALUES (90000, 'CLEARANCE SALE', '25% OFF ON ALL ITEMS', social_media_table_type
 ));
 
 
-INSERT INTO sites (site_id, address, classroom, location, state)
+INSERT INTO sites (site_id, address, classroom, location, state_ref)
 VALUES (9, address_type('20 BOURNE STREET', 'VICTORIA', 'AUSTRALIA'), 
   classroom_varray_type(
     classroom_type('A11', 40, '1ST FLOOR'),
@@ -56,7 +56,7 @@ VALUES (9, address_type('20 BOURNE STREET', 'VICTORIA', 'AUSTRALIA'),
   (SELECT REF(st) FROM states st WHERE st.state = 'VICTORIA')
 );
 
-INSERT INTO sites (site_id, address, location, state)
+INSERT INTO sites (site_id, address, location, state_ref)
   SELECT 11, address_type('20 BOURNE STREET', 'VICTORIA', 'AUSTRALIA'), 'VICTORIA', REF(st) 
   FROM states st 
   WHERE st.state = 'VICTORIA';

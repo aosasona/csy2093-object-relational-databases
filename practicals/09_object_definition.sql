@@ -31,7 +31,7 @@ CREATE OR REPLACE TYPE state_type AS OBJECT (
 CREATE TABLE states OF state_type;
 
 ALTER TABLE sites ADD (
-  state REF state_type SCOPE IS states
+  state_ref REF state_type SCOPE IS states
 );
 
 select object_name, object_type
